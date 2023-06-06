@@ -1,7 +1,6 @@
 import streamlit as st
 import keras
 model = keras.models.load_model('femalevsmale_mobilenetv2_ft_80f')
-import matplotlib.pyplot as plt
 import cv2
 import os
 import numpy as np
@@ -46,7 +45,6 @@ if file is not None:
     registered_photo_rgb = cv2.cvtColor(registered_photo, cv2.COLOR_BGR2RGB)
 
     import tensorflow as tf
-    import matplotlib.pyplot as plt
     import numpy as np
     import os
     IMAGE_SIZE=[160,160]
