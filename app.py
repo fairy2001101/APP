@@ -63,7 +63,7 @@ if file is not None:
 
     import glob
 
-    image_files = glob.glob("test\ex\*")
+    image_files = glob.glob("test/ex/*")
     num_images = len(image_files)
 
 
