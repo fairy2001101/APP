@@ -15,7 +15,7 @@ if file is not None:
     file_bytes = np.asarray(bytearray(file.read()), dtype=np.uint8)
     opencv_image = cv2.imdecode(file_bytes, 1)
     # Load the pre-trained cascade classifier for face detection
-    face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+    face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
     # Load the registered photo
     registered_photo = opencv_image
