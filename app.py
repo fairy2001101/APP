@@ -28,7 +28,7 @@ if file is not None:
     faces = face_cascade.detectMultiScale(gray_registered, scaleFactor=1.2, minNeighbors=5, minSize=(200,200))
 
     # Specify the output directory to save the detected faces
-    output_directory = "test\ex"
+    output_directory = "test/ex"
 
     # Save the detected faces as separate images
     for i, (x, y, w, h) in enumerate(faces):
