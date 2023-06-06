@@ -69,5 +69,5 @@ if file is not None:
 
     for i in range(num_images):
         st.image(image_batch[i].astype("uint8"),caption=class_names[predictions[i]])
-    for image in image_files:
-        os.remove(image)
+#     for image in image_files:
+#         os.remove(image)
