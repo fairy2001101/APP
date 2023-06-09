@@ -1,8 +1,9 @@
 streamlit
+tensorflow
 numpy
 opencv-python-headless
 tensorflow
 keras
 cmake
-face_recognition @ git+https://github.com/thetoby9944/face_recognition
 pyyaml
+face_recognition @ git+https://github.com/thetoby9944/face_recognition
