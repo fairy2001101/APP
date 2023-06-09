@@ -6,6 +6,7 @@ import cv2
 import os
 import numpy as np
 import tensorflow as tf
+set_page_config(layout="wide")
 st.set_page_config(page_title="PH")
 st.markdown("<h1 style='text-align: center; color: grey;'>Gender Classification</h1>", unsafe_allow_html=True)
 def detect_faces(image, output_folder):
