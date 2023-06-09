@@ -3,4 +3,5 @@ numpy
 opencv-python-headless
 tensorflow
 keras
+cmake
 face_recognition
