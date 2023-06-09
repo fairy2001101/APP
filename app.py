@@ -54,7 +54,9 @@ def detect_faces(image, output_folder):
 
         # Convert BGR image to RGB for displaying with plt
         image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-        st.image(image_rgb,caption="Face(s) detecter")
+        col1, col2, col3 = st.columns(3)
+        with col2:
+            st.image(image_rgb,caption="Face(s) detecter")
         IMAGE_SIZE=[160,160]
         class_names=["Female","Male"]
         test_dataset = tf.keras.utils.image_dataset_from_directory("test",
@@ -71,9 +73,11 @@ def detect_faces(image, output_folder):
 
         image_files = glob.glob("test/ex/*")
         num_images = len(image_files)
-
+        st.write("--------------------------------------------")
         for i in range(num_images):
-            st.image(image_batch[i].astype("uint8"),caption=class_names[predictions[i]])
+            co1, co2, co3 = st.columns(3)
+            with co2:
+                st.image(image_batch[i].astype("uint8"),caption=class_names[predictions[i]])
         for image in image_files:
             os.remove(image)
     else:
