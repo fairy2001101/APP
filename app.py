@@ -7,6 +7,7 @@ import os
 import numpy as np
 import tensorflow as tf
 st.set_page_config(page_title="PH")
+st.title("Gender Cassification")
 def detect_faces(image, output_folder):
     # Load pre-trained model files
     prototxt_path = "deploy.prototxt.txt"
