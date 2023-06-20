@@ -70,8 +70,7 @@ def detect_faces(image, output_folder):
         with col2:
             st.image(image_rgb, caption="Face(s) detected")
 
-        co1, co2, co3 = st.columns(3)
-        with co2:
+        with col1:
             # Set the square size
             square_size = 50
 
