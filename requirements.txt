@@ -1,9 +1,10 @@
 streamlit
 tensorflow
 numpy
-opencv-python>=4.1.0
+opencv-python-headless
 tensorflow
-keras>=2.0.0
+keras
 cmake
 pyyaml
 face_recognition @ git+https://github.com/thetoby9944/face_recognition
+mtcnn
