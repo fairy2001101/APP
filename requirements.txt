@@ -7,4 +7,4 @@ keras
 cmake
 pyyaml
 face_recognition @ git+https://github.com/thetoby9944/face_recognition
-!pip install mtcnn
+mtcnn
