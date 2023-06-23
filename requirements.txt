@@ -1,8 +1,8 @@
 streamlit
-mtcnn==0.1.0
 tensorflow
 numpy
 opencv-python-headless
+mtcnn==0.1.0
 tensorflow
 keras
 cmake
