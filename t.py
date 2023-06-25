@@ -10,7 +10,7 @@ model=model = keras.models.load_model('femalevsmale_mobilenetv2_ft_80f')
 st.set_page_config(page_title="PH", layout="wide")
 st.markdown("<h1 style='text-align: center; color: grey;'>Gender Classification</h1>", unsafe_allow_html=True)
 IMAGE_SIZE = [160, 160]
-class_names = ["Female", "Male
+class_names = ["Female", "Male"]
 def detect_faces(image, output_folder):
 
     # Convert the image from BGR to RGB
