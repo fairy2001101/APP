@@ -24,7 +24,7 @@ def detect_faces(image, output_folder):
         # Loop over the face locations
         for ( x, y, w, h) in faces:
             # Extract the face region
-            face_img = image[y:y + h, x:x + w]
+            face_img = image[x:w, h:y]
 
             # Construct the output file path
             output_path = os.path.join(output_folder, 'face.jpg')
