@@ -2,7 +2,7 @@ streamlit
 tensorflow
 numpy
 mtcnn
-opencv-python-headless
+opencv-python
 tensorflow
 keras
 cmake
