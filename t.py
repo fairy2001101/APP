@@ -60,7 +60,7 @@ def detect_faces(image, output_folder):
 
             # Draw bounding box on the image
             thickness = int((image.shape[0] + image.shape[1]) / 600)  # Calculate thickness based on image size
-            cv2.rectangle(image, (x, y), (x + w, y + h), color, thickness)
+            cv2.rectangle(image, (h, x), (y, w), color, thickness)
 
         # Convert the image from BGR to RGB for Matplotlib
         image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
