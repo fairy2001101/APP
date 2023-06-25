@@ -1,31 +1,29 @@
 import streamlit as st
 import keras
 import glob
-from mtcnn import MTCNN
 import cv2
 import os
 import numpy as np
 import tensorflow as tf
+import face_recognition
 model=model = keras.models.load_model('femalevsmale_mobilenetv2_ft_80f')
 st.set_page_config(page_title="PH", layout="wide")
 st.markdown("<h1 style='text-align: center; color: grey;'>Gender Classification</h1>", unsafe_allow_html=True)
 IMAGE_SIZE = [160, 160]
-class_names = ["Female", "Male"]
-face_detector = MTCNN()
+class_names = ["Female", "Male
 def detect_faces(image, output_folder):
 
     # Convert the image from BGR to RGB
     image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
     # Use face_recognition library for face detection
-    faces = face_detector.detect_faces(image_rgb)
+    faces = face_recognition.face_locations(image_rgb)
 
     # Check if any faces are detected
     if len(faces) > 0:
         # Loop over the face locations
-        for face in faces:
+        for ( x, y, w, h) in faces:
             # Extract the face region
-            x, y, w, h = face['box']
             face_img = image[y:y + h, x:x + w]
 
             # Construct the output file path
