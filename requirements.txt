@@ -1,7 +1,6 @@
 streamlit
 tensorflow
 numpy
-mtcnn
 opencv-python-headless
 tensorflow
 keras
